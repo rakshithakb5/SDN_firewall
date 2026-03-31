@@ -19,12 +19,12 @@ To implement an SDN-based firewall that blocks traffic from a specific host (h3)
 
 ## ->Topology
 
-Single switch topology with 3 hosts:
+(Single switch topology with 3 hosts)
+Here I have used Mininet to create a topology with 3 hosts and 1 switch. The switch is controlled by a POX controller using the OpenFlow protocol.
 
 * h1
 * h2
 * h3
-I used Mininet to create a topology with 3 hosts and 1 switch. The switch is controlled by a POX controller using the OpenFlow protocol.
 
 ## ->Implementation
 
