@@ -1,15 +1,13 @@
 # SDN Firewall using POX and Mininet
 
+## What is SDN?
+Software Defined Networking (SDN) separates the control plane from the data plane, allowing centralized control of network behavior using a controller.
+
 ## Objective
 
 To implement an SDN-based firewall that blocks traffic from a specific host (h3) while allowing communication between other hosts.
 
 ---
-## What is SDN?
-Software Defined Networking (SDN) separates the control plane from the data plane, allowing centralized control of network behavior using a controller.
-
---- 
-
 ## Tools Used
 
 * Mininet
@@ -62,24 +60,21 @@ h3 ping h2 → No replies (blocked by controller)
 
 ---
 
-## 📊 Flow Table
+## Flow Table
 
 sudo ovs-ofctl -O OpenFlow10 dump-flows s1
 
----
 
-## 📈 Performance Test
+## Performance Test
 
 iperf h1 h2
 
----
-
-## 📸 Output
+## Output
 
 Screenshots provided in the screenshots folder.
 
 ---
 
-## Conclusion
+## Conclusion!
 
 The SDN firewall successfully demonstrates centralized traffic control using a controller. The system dynamically blocks unauthorized traffic and allows valid communication using OpenFlow rules.
